@@ -54,6 +54,15 @@ body {
   margin: 0 auto;
 }
 
+div.item-inner{
+  padding-right: 5px !important;
+  padding-left: 5px !important;
+}
+
+div.item-content {
+  padding-left: 0px !important;
+}
+
 .item-no-accessory {
   background-image: none !important;
   padding-left: 30px;
@@ -68,7 +77,7 @@ body {
 }
 
 .item-inner .left {
-  margin-left: -20px;
+  margin-left: 10px;
   width: 50%;
 }
 
@@ -86,11 +95,11 @@ body {
 
 .item-inner .right img {
   float: left;
-  margin-left: -5px;
+  margin-left: 0px;
 }
 
 .item-inner .right {
-  padding-left: 25px;
+  padding-left: 20px;
   width: 50%;
 }
 
@@ -112,17 +121,17 @@ body {
 
 .item-content .divider {
   width: 1px;
-  height: 48px;
+  height: 46px;
   margin-top: -8px;
-  margin-left: 15px;
+  margin-left: 5px;
   position: absolute;
   background-color: #c8c7cc;
 }
 
 .badge-count {
   position: absolute;
-  top: 0px;
-  margin-left: -5px;
+  top: 2px;
+  margin-left: -8px;
   border-radius: 7.5px;
   padding-left: 5px;
   padding-top: 2px;
