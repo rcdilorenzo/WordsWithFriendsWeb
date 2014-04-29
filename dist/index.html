@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/framework7.css">
     <!-- Path to your custom app styles-->
     <link rel="stylesheet" href="css/my-app.css">
+    <!-- Font Awesome! -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   </head>
   <body>
     <!-- Panels overlay-->
@@ -31,12 +33,15 @@
       <!-- Your main view, should have "view-main" class-->
       <div class="view view-main">
         <!-- Top Navbar-->
-        <div class="navbar">
+        <div class="navbar" id="words-with-friends-nav">
           <div class="navbar-inner">
             <!-- We have home navbar without left link-->
-            <div class="center sliding">Awesome App</div>
+            <div class="left">
+              <a href="#" class="link icon-only open-panel"><i class="icon fa fa-bars fa-5"></i></a>
+            </div>
+            <div class="center sliding" id="wwf-title">Words With Friends</div>
             <div class="right">
-              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"><i class="icon icon-bars-blue"></i></a>
+              <a href="#" class="link icon-only"><i class="icon fa fa-plus fa-5"></i></a>
             </div>
           </div>
         </div>
@@ -45,15 +50,36 @@
           <!-- Page, data-page contains page name-->
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
-            <div class="page-content">
-              <div class="content-block-title">Welcome To My Awesome App</div>
-              <div class="content-block">
-                <div class="content-block-inner">
-                  <p>Couple of worlds here because my app is so awesome!</p>
-                  <p>Duis sed erat ac eros ultrices pharetra id ut tellus. Praesent rhoncus enim ornare ipsum aliquet ultricies. Pellentesque sodales erat quis elementum sagittis.</p>
-                </div>
+            <div class="page-content" id="main-table">
+              <div class="content-block-title">Your Move</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner item-no-accessory">
+                          <div class="item-title item-subtitle item-center">waiting for moves...</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner item-no-accessory">
+                          <div class="left">
+                            <img id="facebook" src="img/facebook.png" width="30px" height="30px">
+                            <span style="float: left;" class="badge-count">3</span>
+                            <div class="item-title-small" style="float: left; margin-left: 8px;">Facebook</div>
+                            <div class="item-title-small-subtitle" style="float: left; margin-left: 8px;">12 friends playing!</div>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right">
+                            <img src="img/twitter.png" width="40px" height="32.6px">
+                            <div class="item-title-small" style="float: left; margin-left: 8px;">Twitter</div>
+                            <div class="item-title-small-subtitle" style="float: left; margin-left: 8px;">Invite followers!</div>
+                          </div>
+                        </div>
+                      </div></a></li>
+                </ul>
               </div>
-              <div class="content-block-title">What about simple navigation?</div>
+              <div class="content-block-title">Their Move</div>
               <div class="list-block">
                 <ul>
                   <li><a href="about.html" class="item-link">
@@ -85,10 +111,6 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Bottom Toolbar-->
-        <div class="toolbar">
-          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
         </div>
       </div>
     </div>
