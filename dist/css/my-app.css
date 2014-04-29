@@ -138,6 +138,60 @@ body {
   font-size: 16pt;
 }
 
+.avatar {
+  width: 80px;
+  height: 80px;
+  background: #f0b352; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f0b352 0%, #f5d346 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0b352), color-stop(100%,#f5d346)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f0b352 0%,#f5d346 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f0b352 0%,#f5d346 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f0b352 0%,#f5d346 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f0b352 0%,#f5d346 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b352', endColorstr='#f5d346',GradientType=0 ); /* IE6-9 */
+  border-radius: 5px;
+  text-align: center;
+  color: #4C1B04;
+  float: left;
+  margin-right: 15px;
+}
+
+.avatar h1 {
+  margin-top: 3px;
+  font-size: 47pt;
+  font-weight: 500;
+}
+
+.avatar sup {
+  position: absolute;
+  margin-top: -130px;
+  margin-left: 25px;
+  font-size: 12pt;
+}
+
+.avatar.dimmed {
+  opacity: 0.7;
+}
+
 #facebook {
   border-radius: 4px;
+}
+
+#moves li .item-inner {
+  min-height: 100px;
+}
+
+#moves .left {
+  margin-left: 0px;
+}
+
+.item-title:not(.item-center) {
+  font-size: 16pt !important;
+  margin-top: 15px;
+  overflow: visible !important;
+}
+
+.item-subtitle:not(.gray):not(.item-center) {
+  color: #007aff;
+  overflow: visible !important;
 }
