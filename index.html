@@ -1,1 +1,212 @@
-dist/index.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+    <!-- Font Awesome! -->
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  </head>
+  <body>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <div class="list-block">
+          <ul>
+            <li><a href="#" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner item-no-accessory">
+                    <div class="left">
+                      <img src="img/user-img.png" width="40px" height="40px">
+                      <div class="item-title">javaswinger</div>
+                    </div>
+                  </div>
+                </div></a></li>
+            <li><a href="#" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner item-no-accessory">
+                    <div class="left">
+                      <div class="img" width="40px" height="40px">W</div>
+                      <div class="item-title">Games</div>
+                    </div>
+                  </div>
+                </div></a></li>
+            <li><a href="#" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner item-no-accessory">
+                    <div class="left">
+                      <img src="img/stats.svg" width="40px" height="40px">
+                      <div class="item-title">Stats</div>
+                    </div>
+                  </div>
+                </div></a></li>
+            <li><a href="#" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner item-no-accessory">
+                    <div class="left">
+                      <img src="img/cart.svg" width="40px" height="40px">
+                      <div class="item-title">Store</div>
+                    </div>
+                  </div>
+                </div></a></li>
+            <li><a href="#" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner item-no-accessory">
+                    <div class="left">
+                      <img src="img/face-to-face.svg" width="40px" height="40px">
+                      <div class="item-title">Face to Face</div>
+                    </div>
+                  </div>
+                </div></a></li>
+            <li><a href="#" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner item-no-accessory">
+                    <div class="left">
+                      <img src="img/gear.png" width="40px" height="40px">
+                      <div class="item-title">Settings</div>
+                    </div>
+                  </div>
+                </div></a></li>
+            <li><a href="#" class="item-link">
+                <div class="item-content">
+                  <div class="item-inner item-no-accessory">
+                    <div class="left">
+                      <div class="img" style="padding-left: 5px;" width="40px" height="40px">?</div>
+                      <div class="item-title">Help</div>
+                    </div>
+                  </div>
+                </div></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar" id="words-with-friends-nav">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="left">
+              <a href="#" class="link icon-only open-panel"><i class="icon fa fa-bars fa-5"></i></a>
+            </div>
+            <div class="center sliding" id="wwf-title">Words With Friends</div>
+            <div class="right">
+              <a href="#" class="link icon-only"><i class="icon fa fa-plus fa-5"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content" id="main-table">
+              <div class="content-block-title">Your Move</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner item-no-accessory">
+                          <div class="item-title item-subtitle item-center">waiting for moves...</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner item-no-accessory">
+                          <div class="left">
+                            <img id="facebook" src="img/facebook.png" width="30px" height="30px">
+                            <span style="float: left;" class="badge-count">3</span>
+                            <div class="item-title-small" style="float: left; margin-left: 8px;">Facebook</div>
+                            <div class="item-title-small-subtitle" style="float: left; margin-left: 8px;">12 friends playing!</div>
+                          </div>
+                          <div class="divider"></div>
+                          <div class="right">
+                            <img src="img/twitter.png" width="40px" height="32.6px">
+                            <div class="item-title-small" style="float: left; margin-left: 8px;">Twitter</div>
+                            <div class="item-title-small-subtitle" style="float: left; margin-left: 8px;">Invite followers!</div>
+                          </div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="content-block-title">Their Move</div>
+              <div class="list-block">
+                <ul id="moves">
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="left">
+                            <div class="avatar"><h1>M</h1><sup>4</sup></div>
+                            <div class="item-title">matcher20</div>
+                            <div class="item-subtitle">2 hours ago</div>
+                          </div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="left">
+                            <div class="avatar"><h1>E</h1><sup>1</sup></div>
+                            <div class="item-title">eightpower43</div>
+                            <div class="item-subtitle">2 days ago</div>
+                          </div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="left">
+                            <div class="avatar"><h1>B</h1><sup>3</sup></div>
+                            <div class="item-title">bigscrabbler24</div>
+                            <div class="item-subtitle">1 week ago</div>
+                          </div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+              <div class="content-block-title">Game Over</div>
+              <div class="list-block">
+                <ul id="moves">
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="left">
+                            <div class="avatar dimmed"><h1>M</h1><sup>4</sup></div>
+                            <div class="item-title">matcher20</div>
+                            <div class="item-subtitle gray">You lost :-(</div>
+                          </div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="#" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner">
+                          <div class="left">
+                            <div class="avatar dimmed"><h1>X</h1><sup>8</sup></div>
+                            <div class="item-title">xaptrouble84</div>
+                            <div class="item-subtitle gray">You won!</div>
+                          </div>
+                        </div>
+                      </div></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
