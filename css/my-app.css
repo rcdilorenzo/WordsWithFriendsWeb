@@ -262,10 +262,6 @@ div.item-content {
   border-bottom: 1px solid black;
 }
 
-.panel .left {
-  margin-left: -5px;
-}
-
 .views {
   -webkit-box-shadow: -6px 1px 10px 0px rgba(0,0,0,0.2);
   -moz-box-shadow: -6px 1px 10px 0px rgba(0,0,0,0.2);
